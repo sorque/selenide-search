@@ -21,14 +21,15 @@ public class FirstTest {
 
     @Test
     void firstTest() {
-        System.out.println("some test here");
-        Assertions.assertTrue( true);
+        System.out.println("some test here!");
+        Assertions.assertTrue(true);
 
     }
+
     @Test
     void secondTest() {
         System.out.println("another test here");
-        Assertions.assertTrue( true);
+        Assertions.assertTrue(true);
 
     }
 }
