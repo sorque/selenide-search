@@ -32,4 +32,11 @@ public class FirstTest {
         Assertions.assertTrue(true);
 
     }
+
+    @Test
+    void thirdTest() {
+        System.out.println("some another test here!!1");
+        Assertions.assertTrue(true);
+
+    }
 }
