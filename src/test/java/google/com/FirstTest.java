@@ -1,15 +1,42 @@
 package google.com;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class FirstTest {
 
+    @BeforeAll
+    static void beforeAll() {
+        System.out.println("this is beforAll message");
+    }
+
+    @BeforeEach
+    void setUp() {
+        System.out.println("this is introduction");
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("this is conclusion");
+    }
+
     @Test
     void firstTest() {
-        System.out.println("Hello there");
-        Assertions.assertTrue( true);
+        System.out.println("some test here!");
+        Assertions.assertTrue(true);
 
     }
 
+    @Test
+    void secondTest() {
+        System.out.println("another test here!!!");
+        Assertions.assertTrue(true);
+
+    }
+
+    @Test
+    void thirdTest() {
+        System.out.println("some another test here!!1");
+        Assertions.assertTrue(true);
+
+    }
 }
